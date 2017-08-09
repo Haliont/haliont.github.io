@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="static/fonts/robotocondensed/robotocondensed.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>Поставщикам
+    </title>
+  </head>
+  <body>
+    <div class="wrapper"> 
+      <!-- Хедер-->
+      <header class="header">
+        <div class="container">
+          <div class="header__main"><a class="header__logo logo clearfix" href="index.html">
+              <div class="logo__img"></div>
+              <div class="logo__text">
+                <div class="logo__subtext-wrap">
+                  <h1 class="logo__name">Авто<span>Макс</span></h1><span class="logo__desc">магазин автозапчастей</span>
+                </div><span class="logo__hours">24</span>
+              </div></a>
+            <form class="header__search search" action="/">
+              <input class="search__input" type="text" name="search">
+              <button class="search__btn"></button>
+            </form>
+            <div class="header__basket basket">
+              <div class="basket__body">
+                <div class="basket__icon"></div><span class="basket__gds">5</span>
+              </div><a class="basket__footer js-show-basket" href="basket.html">Моя корзина</a>
+              <!-- Всплывашка в корзине-->
+              <ul class="basket__product-wrap basket-products">
+                <li class="basket__btn-remove btn-remove js-hide-basket"></li>
+                <!-- Товар который в всплывашке-->
+                <li class="baskets-products__item products-item"><a class="products-item__img" href="product.html"><img src="static/img/products/1.jpeg" alt="Товар в корзине"/></a>
+                  <div class="products-item__caption">
+                    <h3 class="products-item__caption">Блок двигателя 2110 АвтоВАЗ</h3>
+                  </div>
+                  <div class="products-item__price-and-btn">
+                    <div class="products-item__price product__price">21 700</div>
+                    <div class="products-item__btn-remove btn-remove" title="Удалить товар"></div>
+                  </div>
+                </li>
+                <li class="baskets-products__item products-item"><a class="products-item__img" href="product.html"><img src="static/img/products/2.jpeg" alt="Товар в корзине"/></a>
+                  <div class="products-item__caption">
+                    <h3 class="products-item__caption">Блок двигателя 21213 АвтоВАЗ</h3>
+                  </div>
+                  <div class="products-item__price-and-btn">
+                    <div class="products-item__price product__price">16 870</div>
+                    <div class="products-item__btn-remove btn-remove" title="Удалить товар"></div>
+                  </div>
+                </li>
+                <li class="baskets-products__item products-item"><a class="products-item__img" href="product.html"><img src="static/img/products/3.jpeg" alt="Товар в корзине"/></a>
+                  <div class="products-item__caption">
+                    <h3 class="products-item__caption">Гильза блока 76,0</h3>
+                  </div>
+                  <div class="products-item__price-and-btn">
+                    <div class="products-item__price product__price">350</div>
+                    <div class="products-item__btn-remove btn-remove" title="Удалить товар"></div>
+                  </div>
+                </li>
+                <li class="baskets-products__item products-item"><a class="products-item__img" href="product.html"><img src="static/img/products/4.jpeg" alt="Товар в корзине"/></a>
+                  <div class="products-item__caption">
+                    <h3 class="products-item__caption">Заглушка ДВС 2101-07</h3>
+                  </div>
+                  <div class="products-item__price-and-btn">
+                    <div class="products-item__price product__price">15</div>
+                    <div class="products-item__btn-remove btn-remove" title="Удалить товар"></div>
+                  </div>
+                </li>
+                <li class="basket__check-out-and-total"><a class="basket__btn btn" href="basket.html">Перейти в корзину</a><span class="basket-total product__price">38 935</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav class="nav">
+        <div class="container">
+          <ul class="header__nav">
+            <li><a class="nav__link link" href="index.html">Главная</a></li>
+            <li><a class="nav__link link" href="goods.html">Товары</a></li>
+            <li><a class="nav__link link" href="news.html">Новости</a></li>
+            <li><a class="nav__link link" href="suppliers.html">Поставщикам</a></li>
+            <li><a class="nav__link link" href="about-us.html">О нас</a></li>
+            <li><a class="nav__link link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main class="suppliers">
+        <div class="container">
+          <h2 class="page-title">Написать нам, обратная связь</h2>
+          <form class="suppliers__form form" action="/" method="post" name="suppliers-form">
+            <div class="form__group">
+              <label class="form__label" for="name">Имя:</label>
+              <input class="form__input" type="text" name="name" id="name" placeholder="Например: Евгений" required>
+              <div class="form__icon-valid"></div>
+              <div class="form__icon-invalid"></div>
+            </div>
+            <div class="form__group">
+              <label class="form__label">Род дейятельности:</label>
+              <input class="form__radio-btn" type="radio" name="working" id="working-1" value="Частное лицо">
+              <label class="form__radio-label" for="working-1">Частное лицо</label>
+              <input class="form__radio-btn" type="radio" name="working" id="working-2" value="Автомагазин">
+              <label class="form__radio-label" for="working-2">Автомагазин</label>
+              <input class="form__radio-btn" type="radio" name="working" id="working-3" value="Автосервис">
+              <label class="form__radio-label" for="working-3">Автосервис</label>
+              <input class="form__radio-btn" type="radio" name="working" id="working-4" value="Оптовый клиент">
+              <label class="form__radio-label" for="working-4">Оптовый клиент</label>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="map">Город, населенный пункт:</label>
+              <input class="form__input" type="text" name="map" id="map" placeholder="Например: Омск" required>
+              <div class="form__icon-valid"></div>
+              <div class="form__icon-invalid"></div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">Ваш почтовый E-mail:</label>
+              <input class="form__input" type="email" name="email" id="email" placeholder="Например: evgenilokovich@mail.ru" required>
+              <div class="form__icon-valid"></div>
+              <div class="form__icon-invalid"></div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="tel">Ваш телефон:</label>
+              <input class="form__input" type="tel" name="tel" id="tel" placeholder="Например: 89087594748" required>
+              <div class="form__icon-valid"></div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="mess">Ваше сообщение:</label>
+              <textarea class="form__input form__textarea" name="mess" id="mess" placeholder="Вводите ваше сообщение" required></textarea>
+              <div class="form__icon-valid"></div>
+              <div class="form__icon-invalid"></div>
+            </div>
+            <button class="form__btn btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body"><a class="footer__logo logo clearfix" href="index.html">
+            <div class="logo__img"></div>
+            <div class="logo__text">
+              <div class="logo__subtext-wrap">
+                <h1 class="logo__name">Авто<span>Макс</span></h1><span class="logo__desc">магазин автозапчастей</span>
+              </div><span class="logo__hours">24</span>
+            </div></a>
+          <ul class="footer__link-box">
+            <li class="footer__link-item"><a class="footer__link link" href="about.html">О нас</a></li>
+            <li class="footer__link-item"><a class="footer__link link" href="contacts.html">Контакты</a></li>
+            <li class="footer__link-item"><a class="footer__link link" href="news.html">Новости</a></li>
+          </ul>
+          <div class="footer__method-pay method-pay">
+            <h3 class="method-pay__title">Способ оплаты</h3><span class="method-pay__desc">Наличными при получении товара</span>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>© 2017.АВТОМАКС все права защищены</p>
+        </div>
+      </div>
+    </footer>
+    <script src="static/libs/jquery/jquery.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
